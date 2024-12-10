@@ -1,0 +1,15 @@
+set(SPEED_VERSION 1.0)
+@PACKAGE_INIT@
+
+# make sure we have all needed dependencies
+include(CMakeFindDependencyMacro)
+find_dependency(Threads REQUIRED)
+find_dependency(nlohmann_json REQUIRED)
+
+INCLUDE("${CMAKE_CURRENT_LIST_DIR}/SpeedApiTargets.cmake")
+INCLUDE("${CMAKE_CURRENT_LIST_DIR}/SpeedCoreTargets.cmake")
+
+check_required_components(
+Speed-api
+Speed-core
+)

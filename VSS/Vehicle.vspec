@@ -1,0 +1,5 @@
+Speed:
+  datatype: float
+  type: sensor
+  unit: km/h
+  description: Vehicle speed.

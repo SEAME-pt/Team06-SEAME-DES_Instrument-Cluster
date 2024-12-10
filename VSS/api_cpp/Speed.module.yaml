@@ -1,0 +1,4 @@
+schema: apigear.module/1.0
+name: Speed
+version: '1.0'
+interfaces: []

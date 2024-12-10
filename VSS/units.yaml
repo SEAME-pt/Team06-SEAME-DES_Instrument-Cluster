@@ -1,0 +1,5 @@
+km/h:
+  definition: Velocity measured in kilometers per hours
+  unit: kilometer per hour
+  quantity: velocity
+  allowed-datatypes: ['numeric']
