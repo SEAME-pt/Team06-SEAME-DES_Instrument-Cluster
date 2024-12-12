@@ -196,7 +196,7 @@ void Motors::writeByteData(int fd, uint8_t reg, uint8_t value) {
         throw std::runtime_error("Erro ao escrever no dispositivo I2C.");
     }
 }
-
+/* 
 // Função de callback chamada em interrupções
 void Motors::pulsoDetectado(struct gpiod_line_event event) {
     if (event.event_type == GPIOD_LINE_EVENT_RISING_EDGE) { // Detecta borda de subida
@@ -255,12 +255,6 @@ void Motors::updateVol(){
         }
         std::this_thread::sleep_for(std::chrono::milliseconds(100)); // Pausa para reduzir uso da CPU
 	}
-}
+} */
 
-// Função de tratamento de sinal para interromper o programa com Ctrl+C
-void signalHandler(int signum) {
-	(void)signum;
-    std::cout << "\nInterrupção recebida, parando os motores..." << std::endl;
-    running = false;
-}
 
