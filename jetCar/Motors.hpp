@@ -67,10 +67,6 @@ public:
 	void monitorGPIO(struct gpiod_line *line);
 
 	void updateVol();
-
-
-
-
 };
 
 #endif

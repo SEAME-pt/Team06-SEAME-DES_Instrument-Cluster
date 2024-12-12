@@ -17,23 +17,18 @@
 #include <chrono> // Para cálculos de tempo
 #include <csignal> // Biblioteca para manipulação de sinais
 
-class FServo{
+class BackMotors{
 private:
 	std::string i2c_device;
-	const int _servoAddr = 0x40;
-	const int _maxAngle = 90;
-	const int _servoCenterPwm = 320;
-	const int _servoLeftPwm = 320 - 200;
-	const int _servoRightPwm = 320 + 200;
-	const int _sterringChannel = 0;
+	const int _motorAddr = 0x60;
+	int _fdMotor;
 
-	int _fdServo;
-	int _currentAngle;
 public:
-	FServo();
-	~FServo();
-	bool init_servo();
-	bool setServoPwm(const int channel, int on_value, int off_value);
+	BackMotors();
+	~BackMotors();
+	bool init_motors();
+	bool setMotorPwm(const int channel, int value);
+	void setSpeed(int speed);
 
 	void writeByteData(int fd, uint8_t reg, uint8_t value);
 	uint8_t readByteData(int addr, uint8_t reg);
