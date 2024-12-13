@@ -91,3 +91,64 @@ void BackMotors::setSpeed(int speed){
 			}
 	}
 }
+
+void BackMotors::writeByteData(int fd, uint8_t reg, uint8_t value) {
+	uint8_t buffer[2] = {reg, value};
+	if (write(fd, buffer, 2) != 2) {
+		throw std::runtime_error("Erro ao escrever no dispositivo I2C.");
+	}
+}
+
+uint8_t BackMotors::readByteData(int fd, uint8_t reg){
+	if(write(fd, &reg, 1) != 1)
+		throw std::runtime_error("Erro ao enviar o registrador ao dispositivo I2C.");
+	uint8_t value;
+	if (read(fd, &value, 1) != 1)
+		throw std::runtime_error("Erro ao ler o registrador ao dispositivo I2C.");
+	return value;
+}
+
+// Função de tratamento de sinal para interromper o programa com Ctrl+C
+void signalHandler(int signum) {
+	(void)signum;
+    std::cout << "\nInterrupção recebida, parando os motores..." << std::endl;
+    //running = false;
+}
+
+int main() {
+    // Conectar o manipulador de sinal ao SIGINT
+    signal(SIGINT, signalHandler);
+
+    try {
+        BackMotors motors;
+
+        if (!motors.init_motors()) {
+            std::cerr << "Falha na inicialização dos motores.\n";
+            return 1;
+        }
+
+        std::cout << "Inicialização completa. Testando funções...\n";
+
+        // Testar controle de velocidade
+        std::cout << "Acelerando para frente a 50% da velocidade...\n";
+        motors.setSpeed(50);
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
+  		std::cout << "Parando motores...\n";
+        motors.setSpeed(0);
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
+        std::cout << "Revertendo para trás a 30% da velocidade...\n";
+        motors.setSpeed(-30);
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
+        std::cout << "Parando motores...\n";
+        motors.setSpeed(0);
+
+        std::cout << "Teste concluído com sucesso.\n";
+    } catch (const std::exception &e) {
+        std::cerr << "Erro: " << e.what() << "\n";
+        return 1;
+    }
+    return 0;
+}

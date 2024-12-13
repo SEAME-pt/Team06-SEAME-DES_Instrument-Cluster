@@ -197,7 +197,7 @@ void Motors::writeByteData(int fd, uint8_t reg, uint8_t value) {
     }
 }
 
-// Função de callback chamada em interrupções
+/* // Função de callback chamada em interrupções
 void Motors::pulsoDetectado(struct gpiod_line_event event) {
     if (event.event_type == GPIOD_LINE_EVENT_RISING_EDGE) { // Detecta borda de subida
         _pulsos++;
@@ -255,7 +255,7 @@ void Motors::updateVol(){
         }
         std::this_thread::sleep_for(std::chrono::milliseconds(100)); // Pausa para reduzir uso da CPU
 	}
-}
+} */
 
 // Função de tratamento de sinal para interromper o programa com Ctrl+C
 void signalHandler(int signum) {
@@ -264,3 +264,60 @@ void signalHandler(int signum) {
     running = false;
 }
 
+int main() {
+    // Conectar o manipulador de sinal ao SIGINT
+    signal(SIGINT, signalHandler);
+
+    try {
+        Motors motors;
+
+        // Inicializar servo e motores
+        if (!motors.init_servo()) {
+            std::cerr << "Falha na inicialização do servo.\n";
+            return 1;
+        }
+
+        if (!motors.init_motors()) {
+            std::cerr << "Falha na inicialização dos motores.\n";
+            return 1;
+        }
+
+        std::cout << "Inicialização completa. Testando funções...\n";
+
+        // Testar controle de direção
+        std::cout << "Definindo ângulo de direção para -45 graus...\n";
+        motors.set_steering(-45);
+        std::this_thread::sleep_for(std::chrono::seconds(2));
+
+        std::cout << "Definindo ângulo de direção para +45 graus...\n";
+        motors.set_steering(45);
+        std::this_thread::sleep_for(std::chrono::seconds(2));
+
+        std::cout << "Centralizando direção...\n";
+        motors.set_steering(0);
+        std::this_thread::sleep_for(std::chrono::seconds(2));
+
+        // Testar controle de velocidade
+        std::cout << "Acelerando para frente a 50% da velocidade...\n";
+        motors.setSpeed(50);
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
+  		std::cout << "Parando motores...\n";
+        motors.setSpeed(0);
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
+        std::cout << "Revertendo para trás a 30% da velocidade...\n";
+        motors.setSpeed(-30);
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
+        std::cout << "Parando motores...\n";
+        motors.setSpeed(0);
+
+        std::cout << "Teste concluído com sucesso.\n";
+    } catch (const std::exception &e) {
+        std::cerr << "Erro: " << e.what() << "\n";
+        return 1;
+    }
+
+    return 0;
+}

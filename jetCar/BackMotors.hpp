@@ -12,7 +12,7 @@
 
 #include <csignal> // Biblioteca para manipulação de sinais
 
-#include <gpiod.h> // Biblioteca libgpiod
+//#include <gpiod.h> // Biblioteca libgpiod
 #include <atomic>
 #include <chrono> // Para cálculos de tempo
 #include <csignal> // Biblioteca para manipulação de sinais
