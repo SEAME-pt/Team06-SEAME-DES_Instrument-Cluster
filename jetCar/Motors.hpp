@@ -13,7 +13,6 @@
 
 #include <csignal> // Biblioteca para manipulação de sinais
 
-//#include <gpiod.h> // Biblioteca libgpiod
 #include <atomic>
 #include <chrono> // Para cálculos de tempo
 #include <csignal> // Biblioteca para manipulação de sinais
@@ -59,7 +58,7 @@ public:
 	void setSpeed(int speed);
 
 	void writeByteData(int fd, uint8_t reg, uint8_t value);
-	uint8_t readByteData(int addr, uint8_t reg);
+	uint8_t readByteData(int fd, uint8_t reg);
 
 
 	void pulsoDetectado(struct gpiod_line_event event);
