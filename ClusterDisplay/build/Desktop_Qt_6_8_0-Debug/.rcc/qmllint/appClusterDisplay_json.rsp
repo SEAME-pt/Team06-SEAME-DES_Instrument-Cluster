@@ -1,0 +1,15 @@
+--bare
+-I
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug
+-I
+/home/ndo-vale/Qt/6.8.0/gcc_64/qml
+--resource
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/qmake_ClusterDisplay.qrc
+--resource
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/appClusterDisplay_raw_qml_0.qrc
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/Main.qml
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/BatteryIcon.qml
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/SimpleBar.qml
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/Speedometer.qml
+--json
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/appClusterDisplay_qmllint.json

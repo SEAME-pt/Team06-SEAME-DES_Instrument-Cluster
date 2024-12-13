@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>airstrike3d.ttf</file>
+    </qresource>
+</RCC>

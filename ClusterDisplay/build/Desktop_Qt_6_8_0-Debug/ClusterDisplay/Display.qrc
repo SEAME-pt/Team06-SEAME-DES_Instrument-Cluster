@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="/fonts"/>
+    <qresource prefix="/"/>
+</RCC>

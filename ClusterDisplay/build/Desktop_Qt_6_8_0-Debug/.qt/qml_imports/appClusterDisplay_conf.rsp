@@ -1,0 +1,14 @@
+-rootPath
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay
+-cmake-output
+-output-file
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/.qt/qml_imports/appClusterDisplay_conf.cmake
+-importPath
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/ClusterDisplay
+-importPath
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug
+-importPath
+/home/ndo-vale/Qt/6.8.0/gcc_64/qml
+-qrcFiles
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/qmake_ClusterDisplay.qrc
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/appClusterDisplay_raw_qml_0.qrc

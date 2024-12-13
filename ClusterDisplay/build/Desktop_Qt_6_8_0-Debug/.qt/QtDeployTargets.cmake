@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appClusterDisplay_FILE /home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/appClusterDisplay)
+set(__QT_DEPLOY_TARGET_appClusterDisplay_TYPE EXECUTABLE)

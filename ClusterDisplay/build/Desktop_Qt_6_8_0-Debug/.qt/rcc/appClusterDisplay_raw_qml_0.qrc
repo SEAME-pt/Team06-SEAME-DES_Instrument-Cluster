@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/qt/qml/ClusterDisplay/">
+    <file alias="Main.qml">/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/Main.qml</file>
+    <file alias="BatteryIcon.qml">/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/BatteryIcon.qml</file>
+    <file alias="SimpleBar.qml">/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/SimpleBar.qml</file>
+    <file alias="Speedometer.qml">/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/Speedometer.qml</file>
+    <file alias="qml.qrc">/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/qml.qrc</file>
+  </qresource>
+</RCC>
+

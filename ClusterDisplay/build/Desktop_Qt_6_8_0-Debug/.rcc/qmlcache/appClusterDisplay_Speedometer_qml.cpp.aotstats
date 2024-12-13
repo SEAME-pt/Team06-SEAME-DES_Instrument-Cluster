@@ -1,0 +1,68 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 98,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 76
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 161,
+                        "errorMessage": "Cannot access value for name speedometerObj",
+                        "functionName": "width",
+                        "line": 81
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 21,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 82
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 85
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 102
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 11,
+                        "durationMicroseconds": 209,
+                        "errorMessage": "Cannot access value for name speedometerObj",
+                        "functionName": "text",
+                        "line": 105
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 18,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "family",
+                        "line": 103
+                    }
+                ],
+                "filepath": "/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/Speedometer.qml"
+            }
+        ],
+        "moduleId": "ClusterDisplay(appClusterDisplay)"
+    }
+]

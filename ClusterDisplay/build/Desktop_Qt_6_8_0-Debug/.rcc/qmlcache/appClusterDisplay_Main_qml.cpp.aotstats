@@ -1,0 +1,52 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 23,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 25
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 219,
+                        "errorMessage": "Cannot access value for name batteryIconObj",
+                        "functionName": "text",
+                        "line": 29
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 27
+                    }
+                ],
+                "filepath": "/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/Main.qml"
+            }
+        ],
+        "moduleId": "ClusterDisplay(appClusterDisplay)"
+    }
+]

@@ -1,0 +1,8 @@
+--resource
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/qmake_ClusterDisplay.qrc
+--resource
+/home/ndo-vale/Documents/Team06-SEAME-DES_Instrument-Cluster/ClusterDisplay/build/Desktop_Qt_6_8_0-Debug/.qt/rcc/appClusterDisplay_raw_qml_0.qrc
+/qt/qml/ClusterDisplay/Main.qml
+/qt/qml/ClusterDisplay/BatteryIcon.qml
+/qt/qml/ClusterDisplay/SimpleBar.qml
+/qt/qml/ClusterDisplay/Speedometer.qml

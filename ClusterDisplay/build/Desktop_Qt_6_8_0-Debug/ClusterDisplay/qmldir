@@ -1,0 +1,8 @@
+module ClusterDisplay
+typeinfo appClusterDisplay.qmltypes
+prefer :/qt/qml/ClusterDisplay/
+Main 1.0 Main.qml
+BatteryIcon 1.0 BatteryIcon.qml
+SimpleBar 1.0 SimpleBar.qml
+Speedometer 1.0 Speedometer.qml
+
