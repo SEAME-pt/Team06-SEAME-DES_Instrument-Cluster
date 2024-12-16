@@ -1,0 +1,4 @@
+/home/team06/Documentos/ClusterDisplay/ClusterDisplay5/build-ClusterDisplay-Desktop-Default/CMakeFiles/rebuild_cache.dir
+/home/team06/Documentos/ClusterDisplay/ClusterDisplay5/build-ClusterDisplay-Desktop-Default/CMakeFiles/ClusterDisplay.dir
+/home/team06/Documentos/ClusterDisplay/ClusterDisplay5/build-ClusterDisplay-Desktop-Default/CMakeFiles/edit_cache.dir
+/home/team06/Documentos/ClusterDisplay/ClusterDisplay5/build-ClusterDisplay-Desktop-Default/CMakeFiles/ClusterDisplay_autogen.dir
